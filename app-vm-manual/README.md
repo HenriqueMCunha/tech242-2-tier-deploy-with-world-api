@@ -1,6 +1,42 @@
 # Script APP VM Manual
 
 
+## Planning and Manual Testing
+
+### Planning
+
+At first it was necessary to plan what course of action I was going to take, for that I used comments in a notepad which I will highlight below:
+
+```
+#!/bin/bash
+#Update and Upgrade VM
+
+# Install Maven
+
+# Install java 17
+
+# Install apache and configure reverse proxy
+
+# Set environment variables (not necessary at this point in time, but I felt like it facilitated the process)
+
+# Clone repository from github
+
+# If connected to database, run maven (recompile code first)
+
+
+
+```
+
+### Testing
+
+Once planning was done, the commands were set and tested manually before recording them to my notepad (if working).
+
+#### Blockers (Testing)
+
+* Ran into a problem with recompilation of target folder and kept testing until realizing the problem was not having the DB_HOST environment variable.
+
+### Assemble Script to get ready for automation
+
 ```
 #!/bin/bash
  
@@ -34,9 +70,8 @@ export DB_PORT=3306
 rm -rf repo
 git clone https://github.com/HenriqueMCunha/tech242-tier-2-deployment-code.git repo
  
-# recompile the app
-cd repo
-cd WorldProject
+# move into repository
+cd repo/WorldProject
  
 output=$(mysql -h 172.31.39.111 -u root -proot -e "USE world; SELECT 1" 2>&1)
  

@@ -1,6 +1,6 @@
 # Automated Script For App VM
 
-## Caused Error 503 - Problem seems to be in Database Script which is not creating user root
+## First try
 
 ```
 #!/bin/bash
@@ -74,3 +74,9 @@ sudo systemctl reload apache2
 
 sudo systemctl restart apache2
 ```
+
+
+### Blockers
+
+* Caused Error 503 - Problem seemed to be in Database Script which is not creating user root.
+* After properly checking and making sure the database script was idempotent, realised the first attempt at this script works properly.

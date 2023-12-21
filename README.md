@@ -5,6 +5,8 @@
   - [Manual App VM Deployment](#manual-app-vm-deployment)
   - [Automated Database VM Deployment](#automated-database-vm-deployment)
   - [Automated App VM Deployment](#automated-app-vm-deployment)
+  - [User Data Database VM Deployment](#user-data-database-vm-deployment)
+  - [User Data App VM Deployment](#user-data-app-vm-deployment)
 
 
 
@@ -24,3 +26,11 @@
 ## Automated App VM Deployment
 
 * [Automated App VM Script](app-vm-automated/README.md)
+
+## User Data Database VM Deployment
+
+* [User Data Database VM Deployment](database-user-data-vm/README.md)
+
+## User Data App VM Deployment
+
+* [User Data App VM Deployment](world-app-user-data-vm)
